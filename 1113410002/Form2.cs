@@ -21,7 +21,7 @@ namespace _1113410002
         }
         private void SetLanguage(int langType)
         {
-            if (langType == 1) // 中文版
+            if (langType == 1) 
             {
                 this.Text = "個人資料輸入系統";
                 label1.Text = "姓名：";
@@ -44,6 +44,7 @@ namespace _1113410002
                 label8.Text = "電子郵件：";
                 label9.Text = "備註：";
 
+                label10.Text = "顯示欄位：";
                 button2.Text = "檢查並顯示資料"; 
             }
             else if (langType == 2) 
@@ -69,6 +70,7 @@ namespace _1113410002
                 label8.Text = "Email:";
                 label9.Text = "Notes:";
 
+                label10.Text = "Display Field:";
                 button2.Text = "Submit & Show Data"; 
             }
         }

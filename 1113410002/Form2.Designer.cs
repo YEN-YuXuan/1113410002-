@@ -54,6 +54,7 @@
             textBox6 = new TextBox();
             button2 = new Button();
             textBox7 = new TextBox();
+            label10 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,7 +86,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft JhengHei UI", 15F);
-            label3.Location = new Point(50, 245);
+            label3.Location = new Point(50, 269);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(84, 32);
@@ -97,7 +98,7 @@
             // 
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(50, 93);
+            groupBox1.Location = new Point(263, 48);
             groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4);
@@ -135,7 +136,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(140, 48);
+            textBox1.Location = new Point(96, 84);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
@@ -144,7 +145,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(211, 251);
+            dateTimePicker2.Location = new Point(113, 305);
             dateTimePicker2.Margin = new Padding(4);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(251, 27);
@@ -153,7 +154,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(211, 190);
+            dateTimePicker1.Location = new Point(96, 226);
             dateTimePicker1.Margin = new Padding(4);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(251, 27);
@@ -164,7 +165,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft JhengHei UI", 15F);
-            label4.Location = new Point(50, 306);
+            label4.Location = new Point(50, 352);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(84, 32);
@@ -175,7 +176,7 @@
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(185, 306);
+            checkedListBox1.Location = new Point(185, 352);
             checkedListBox1.Margin = new Padding(4);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(207, 202);
@@ -184,7 +185,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(50, 391);
+            textBox2.Location = new Point(50, 437);
             textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
@@ -193,7 +194,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(50, 426);
+            button1.Location = new Point(50, 472);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(94, 28);
@@ -207,7 +208,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft JhengHei UI", 15F);
-            label5.Location = new Point(521, 70);
+            label5.Location = new Point(521, 41);
             label5.Name = "label5";
             label5.Size = new Size(84, 32);
             label5.TabIndex = 7;
@@ -218,7 +219,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft JhengHei UI", 15F);
-            label6.Location = new Point(489, 156);
+            label6.Location = new Point(521, 124);
             label6.Name = "label6";
             label6.Size = new Size(84, 32);
             label6.TabIndex = 7;
@@ -229,7 +230,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft JhengHei UI", 15F);
-            label7.Location = new Point(489, 199);
+            label7.Location = new Point(521, 197);
             label7.Name = "label7";
             label7.Size = new Size(84, 32);
             label7.TabIndex = 7;
@@ -240,7 +241,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft JhengHei UI", 15F);
-            label8.Location = new Point(521, 338);
+            label8.Location = new Point(521, 292);
             label8.Name = "label8";
             label8.Size = new Size(84, 32);
             label8.TabIndex = 7;
@@ -261,7 +262,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(611, 75);
+            comboBox1.Location = new Point(574, 76);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 27);
             comboBox1.TabIndex = 8;
@@ -269,7 +270,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(688, 161);
+            textBox3.Location = new Point(574, 164);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 9;
@@ -277,7 +278,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(688, 204);
+            textBox4.Location = new Point(574, 232);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 10;
@@ -285,7 +286,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(688, 338);
+            textBox5.Location = new Point(574, 327);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(125, 27);
             textBox5.TabIndex = 10;
@@ -314,11 +315,24 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(854, 224);
+            textBox7.Location = new Point(857, 254);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
+            textBox7.ReadOnly = true;
             textBox7.Size = new Size(243, 300);
             textBox7.TabIndex = 12;
+            textBox7.UseWaitCursor = true;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Microsoft JhengHei UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            label10.Location = new Point(857, 221);
+            label10.Name = "label10";
+            label10.Size = new Size(92, 29);
+            label10.TabIndex = 13;
+            label10.Text = "label10";
+            label10.UseWaitCursor = true;
             // 
             // Form2
             // 
@@ -327,6 +341,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1133, 586);
+            Controls.Add(label10);
             Controls.Add(textBox7);
             Controls.Add(button2);
             Controls.Add(textBox6);
@@ -391,5 +406,6 @@
         private TextBox textBox6;
         private Button button2;
         private TextBox textBox7;
+        private Label label10;
     }
 }
