@@ -55,6 +55,7 @@
             button2 = new Button();
             textBox7 = new TextBox();
             label10 = new Label();
+            button3 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft JhengHei UI", 15F);
-            label1.Location = new Point(50, 48);
+            label1.Location = new Point(50, 107);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(84, 32);
@@ -98,11 +99,11 @@
             // 
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(263, 48);
+            groupBox1.Location = new Point(286, 107);
             groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(194, 84);
+            groupBox1.Size = new Size(180, 84);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
@@ -136,16 +137,16 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(96, 84);
+            textBox1.Location = new Point(96, 143);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(111, 27);
             textBox1.TabIndex = 2;
             textBox1.UseWaitCursor = true;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(113, 305);
+            dateTimePicker2.Location = new Point(96, 305);
             dateTimePicker2.Margin = new Padding(4);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(251, 27);
@@ -334,6 +335,17 @@
             label10.Text = "label10";
             label10.UseWaitCursor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(40, 26);
+            button3.Name = "button3";
+            button3.Size = new Size(135, 47);
+            button3.TabIndex = 14;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.UseWaitCursor = true;
+            button3.Click += button3_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
@@ -341,6 +353,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1133, 586);
+            Controls.Add(button3);
             Controls.Add(label10);
             Controls.Add(textBox7);
             Controls.Add(button2);
@@ -407,5 +420,6 @@
         private Button button2;
         private TextBox textBox7;
         private Label label10;
+        private Button button3;
     }
 }

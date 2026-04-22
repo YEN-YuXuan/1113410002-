@@ -14,30 +14,31 @@ namespace _1113410002
         {
             SetLanguage(Form1.selectedLanguage);
 
-            string[] defaultInterests = { "打球", "釣魚", "打遊戲" };
-            checkedListBox1.Items.AddRange(defaultInterests);
-
             checkedListBox1.CheckOnClick = true;
         }
         private void SetLanguage(int langType)
         {
-            if (langType == 1) 
+            if (langType == 1)
             {
+                checkedListBox1.Items.Clear(); 
+                checkedListBox1.Items.AddRange(new string[] { "無","打球", "釣魚", "打遊戲" });
+
                 this.Text = "個人資料輸入系統";
+                button3.Text = "回到語言選擇";
                 label1.Text = "姓名：";
                 groupBox1.Text = "性別：";
                 radioButton1.Text = "男";
                 radioButton2.Text = "女";
                 label2.Text = "出生年月日：";
                 label3.Text = "入職日期：";
-                label4.Text = "興趣：";      
-                button1.Text = "新增";       
+                label4.Text = "興趣：";
+                button1.Text = "新增";
 
                 label5.Text = "國籍：";
-                comboBox1.Items.Clear();     
-                comboBox1.Items.Add("本國籍"); 
+                comboBox1.Items.Clear();
+                comboBox1.Items.Add("本國籍");
                 comboBox1.Items.Add("外國籍");
-                comboBox1.SelectedIndex = 0; 
+                comboBox1.SelectedIndex = 0;
 
                 label6.Text = "通訊地址：";
                 label7.Text = "電話號碼：";
@@ -45,25 +46,29 @@ namespace _1113410002
                 label9.Text = "備註：";
 
                 label10.Text = "顯示欄位：";
-                button2.Text = "檢查並顯示資料"; 
+                button2.Text = "檢查並顯示資料";
             }
-            else if (langType == 2) 
+            else if (langType == 2)
             {
+                checkedListBox1.Items.Clear(); 
+                checkedListBox1.Items.AddRange(new string[] { "None","Sports", "Fishing", "Gaming" });
+
                 this.Text = "Personal Info System";
+                button3.Text = "Back to Language Selection";
                 label1.Text = "Name:";
                 groupBox1.Text = "Gender:";
                 radioButton1.Text = "Male";
                 radioButton2.Text = "Female";
                 label2.Text = "Date of Birth:";
                 label3.Text = "Hire Date:";
-                label4.Text = "Interests:";  
-                button1.Text = "Add";         
+                label4.Text = "Interests:";
+                button1.Text = "Add";
 
                 label5.Text = "Nationality:";
-                comboBox1.Items.Clear();       
-                comboBox1.Items.Add("Domestic"); 
+                comboBox1.Items.Clear();
+                comboBox1.Items.Add("Domestic");
                 comboBox1.Items.Add("Foreign");
-                comboBox1.SelectedIndex = 0;   
+                comboBox1.SelectedIndex = 0;
 
                 label6.Text = "Address:";
                 label7.Text = "Phone Number:";
@@ -71,7 +76,7 @@ namespace _1113410002
                 label9.Text = "Notes:";
 
                 label10.Text = "Display Field:";
-                button2.Text = "Submit & Show Data"; 
+                button2.Text = "Submit & Show Data";
             }
         }
         public Form2()
@@ -116,7 +121,7 @@ namespace _1113410002
                     MessageBox.Show("請確認姓名、地址、電話、信箱都已填寫。", "資料不完整", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                     MessageBox.Show("Some text fields are empty!", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; 
+                return;
             }
 
             if (radioButton1.Checked == false && radioButton2.Checked == false)
@@ -131,9 +136,9 @@ namespace _1113410002
             if (checkedListBox1.CheckedItems.Count == 0)
             {
                 if (Form1.selectedLanguage == 1)
-                    MessageBox.Show("勾選一項興趣！諾無興趣，請自行填寫'無'", "資料不完整", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("勾選一項興趣！", "資料不完整", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("Please select at least one interest!If you are not interested, please fill in 'None'", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please select at least one interest!", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -198,6 +203,12 @@ namespace _1113410002
             textBox7.Text = resultText;
 
         }
-        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
